@@ -1,0 +1,26 @@
+---
+title: "Data & Analysis Portfolio"
+description: |
+  A collection of projects exploring quantitative approaches and data analysis 
+  in political science, highlighting key academic work from my undergraduate 
+  studies.
+output: distill::distill_article
+---
+
+## Projects
+
+[Maternal Impact](_posts/maternal-impact/index.html)
+
+Exploring the NLSY dataset and observing how maternal IQ and family advantage work together to influence child development.
+
+[Democratic Scale](_posts/democratic-scale/index.html)
+
+Analysing valid votes per constituency across the UK countries to understand democratic representation scale differences.
+
+[Political Communications: A/B Testing and Treatment Effects](_posts/political-communications/index.html)
+
+An analysis of digital political messaging to determine how different homepage versions influence supporter signup rates across demographics.
+
+---
+
+[← Back to Home](index.html)

@@ -1,0 +1,42 @@
+---
+title: "Democratic Scale: Analysis of UK Constituency Sizes"
+date: 2026-02-16
+description: |
+  An investigation into how voter distribution and constituency sizes 
+  differ across the UK to understand patterns in democratic representation.
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+library(tidyverse)
+uk <- read.csv("uk.csv")
+```
+Overview: 
+This project examines the distribution of valid votes across parliamentary constituencies in the four countries of the United Kingdom. By utilizing a combination of violin plots and boxplots, the analysis highlights the variation in "democratic scale"—essentially how many voters it takes to form a constituency in different regions. The goal is to identify which countries maintain the most uniform constituency sizes and where geographical or demographic factors create significant disparities in representation.
+
+```{r plot2, eval=TRUE}
+ ggplot(uk, aes(x = fct_reorder(country, valid_votes, median), 
+               y = valid_votes, fill = country)) +
+  geom_violin(trim = FALSE, alpha = 0.4, colour = NA) +
+  geom_boxplot(width = 0.15, outlier.size = 1, alpha = 0.9, colour = "black") +
+  labs(
+    title = "Constituency Sizes Across UK Countries",
+    subtitle = "Valid votes per constituency",
+    x = "Country",
+    y = "Valid Votes"
+  ) +
+  scale_y_continuous(labels = scales::comma) +
+  theme_minimal(base_size = 13) +
+  theme(
+    plot.title = element_text(face = "bold"),
+    legend.position = "none"
+  )
+
+```
+Understanding the Results: 
+The visualisation reveals distinct differences in how parliamentary representation is distributed across the UK. Northern Ireland displays the most uniform distribution; its plot is the most compact, with the internal boxplot showing a very tight range around the median. This suggests that voters in Northern Ireland experience a high degree of equality in terms of the "size" of their constituencies. In contrast, England shows the highest level of inequality. Its wider violin shape and longer tails indicate a significant gap between the smallest and largest constituencies, meaning the number of voters represented by a single MP varies much more widely there than in the other three countries.
+
+Scotland and Wales sit between these two extremes, though Scotland shows notable outliers—specific constituencies with significantly lower vote counts. When looking for the causes behind these patterns, two factors stand out as primary predictors. First, population density plays a major role, as urban centres naturally pack more voters into smaller areas. Second, geographical mandates often protect the voices of remote or island communities, intentionally allowing for smaller constituencies to ensure they aren't overlooked. Ultimately, the data demonstrates that while the UK aims for a standard scale, geography and local density play a major role in shaping the final electoral landscape.

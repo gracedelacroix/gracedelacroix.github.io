@@ -1,0 +1,14 @@
+---
+title: "About this site"
+description: |
+  This website showcases selected academic work from my undergraduate
+  studies. My work engages with quantitative approaches within political science 
+  and reflects my developing skills in data analysis. Together, these projects
+  demonstrate my progression in quantitative reasoning 
+  across different areas of political science.
+output: distill::distill_article
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```

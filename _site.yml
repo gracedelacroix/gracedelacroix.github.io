@@ -1,0 +1,13 @@
+name: "grace-website"
+title: "Grace Delacroix Website"
+output_dir: "_site"
+navbar:
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
+    - text: "Projects"
+      href: projects.html
+include:
+  - "_posts"

@@ -1,0 +1,103 @@
+---
+title: "Political Communications: A/B Testing and Treatment Effects"
+date: 2026-02-16
+description: |
+  An analysis of digital political messaging to determine how different 
+  homepage versions influence supporter signup rates across demographics.
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+library(tidyverse)
+```
+
+Overview
+
+This project evaluates a digital A/B test for a political party to determine which homepage version—the standard control or an "issue-focused" alternative—best drives supporter signups. Beyond simply finding the "winner," this analysis investigates how different demographics, such as age and political interest, respond to the messaging. This allows for a data-driven approach to understanding the Average Treatment Effect (ATE) and optimising digital political communication.
+
+Visualising the Signup Distribution
+
+The first step in the analysis is to compare the signup rates between the two versions of the homepage to visualize the overall density and distribution of the results.
+
+```{r plot1}
+party_ab <- read.csv("party_ab.csv")
+
+party_ab$treatment_label <- factor(party_ab$treatment,
+                                   levels = c(0,1),
+                                   labels = c("Control (A)", "Issue-focused (B)"))
+
+ggplot(party_ab, aes(x = treatment_label, y = support_signup, fill = treatment_label)) +
+  geom_violin(width = 0.7, alpha = 0.35, color = NA, trim = FALSE) +
+  geom_jitter(width = 0.12, height = 0.02, size = 1.2, alpha = 0.6, color = "black") +
+  stat_summary(fun = mean, geom = "point", size = 4, color = "white", shape = 21, stroke = 0.8) +
+  stat_summary(fun.data = mean_se, geom = "errorbar", width = 0.12, size = 0.8, color = "black") +
+  scale_y_continuous(labels = scales::percent_format(accuracy = 1), limits = c(0,1), breaks = seq(0,1,0.2)) +
+  scale_fill_manual(values = c("Control (A)" = "#9A66D4", "Issue-focused (B)" = "#1E88E5")) +
+  labs(
+    x = NULL,
+    y = "Signup rate",
+    title = "Supporter Signup: Distribution by Homepage Version",
+    subtitle = "Violin shows density; dots are individual visitors"
+  ) +
+  theme_minimal(base_size = 14) +
+  theme(
+    legend.position = "none",
+    plot.title = element_text(face = "bold")
+  )
+```
+Understanding the Results
+
+The initial comparison shows a clear success for the "Issue-focused" version. The signup rate increased by approximately 5 percentage points, meaning that for every 100 visitors, the new version generated 5 more signups than the original. The violin plot illustrates that while the density of signups is fairly consistent, the "Issue-focused" version (B) creates a more robust upward shift in the mean signup rate.
+
+Modeling Treatment Effects by Age
+
+To understand who the message resonated with most, a Linear Probability Model was used to estimate the treatment effect at specific ages. This reveals how the impact of the homepage changes as the audience gets older.
+
+```{r plot2}
+ ages <- c(25, 40, 60)
+lm_age <- lm(support_signup ~ treatment * age, data = party_ab)
+coefs <- coef(lm_age)
+beta_treat <- coefs["treatment"]
+beta_inter <- coefs["treatment:age"]
+vc <- vcov(lm_age)
+var_treat <- vc["treatment","treatment"]
+var_inter <- vc["treatment:age","treatment:age"]
+cov_ti <- vc["treatment","treatment:age"]
+te <- beta_treat + beta_inter * ages
+se_te <- sqrt(var_treat + (ages^2) * var_inter + 2 * ages * cov_ti)
+z <- qnorm(0.975)
+ci_low <- te - z * se_te
+ci_high <- te + z * se_te
+
+df_te <- data.frame(
+  age = ages,
+  te = te,
+  lo = ci_low,
+  hi = ci_high,
+  label = paste0(round(te*100,1), " pp")
+)
+
+ggplot(df_te, aes(x = factor(age), y = te)) +
+  geom_point(size = 4, color = "#1E88E5") +
+  geom_errorbar(aes(ymin = lo, ymax = hi), width = 0.2, size = 0.8, color = "#333333") +
+  geom_hline(yintercept = 0, linetype = "dashed", color = "gray40") +
+  geom_text(aes(label = label), vjust = -1.2) +
+  scale_y_continuous(labels = scales::percent_format(accuracy = 0.1)) +
+  labs(
+    x = "Age",
+    y = "Treatment effect (percentage points)",
+    title = "Estimated Treatment Effect at Selected Ages",
+    subtitle = "Interaction model showing stronger response among older visitors"
+  ) +
+  theme_minimal(base_size = 13)
+```
+
+
+The modeling reveals that the "treatment" is not equally effective for everyone. Older visitors showed a significantly stronger response to the issue-focused content compared to younger visitors. By calculating the treatment effect at ages 25, 40, and 60, we can see that the probability of signing up climbs as the age of the visitor increases, providing a clear strategy for targeted messaging.
+
+Ethical Reflection
+
+While A/B testing is a powerful statistical tool, its application in politics raises unique ethical concerns. Unlike commercial testing, these experiments influence political beliefs and democratic choices, often without informed consent. The ability to precisely measure and exploit subgroup differences—such as age or political interest—crosses a line if it becomes manipulative rather than informative. For digital strategies to remain ethical, campaigns must balance their technical capabilities with a moral responsibility toward transparency and fairness.
