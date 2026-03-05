@@ -1,0 +1,651 @@
+"country","constituency","valid_votes","electorate","turnout_registered"
+"England","Aldershot",48544,78553,61.7977671126501
+"England","Aldridge-Brownhills",40912,70268,58.2228041213639
+"England","Altrincham and Sale West",51452,74025,69.5062478892266
+"England","Amber Valley",42531,71546,59.4456713163559
+"England","Arundel and South Downs",54740,77969,70.2073901165848
+"England","Ashfield",39882,68929,57.8595366246428
+"England","Ashford",46975,76233,61.6202956724778
+"England","Ashton-under-Lyne",35461,71002,49.943663558773
+"England","Aylesbury",49940,79169,63.0802460559057
+"England","Banbury",48178,73250,65.7720136518771
+"England","Barking",36477,79822,45.6979278895543
+"England","Barnsley North",36894,78274,47.1344252242124
+"England","Barnsley South",35082,75853,46.2499835207573
+"England","Barrow and Furness",42221,74980,56.3096825820219
+"England","Basildon and Billericay",42124,76873,54.7968727641695
+"England","Basingstoke",48989,78487,62.416705951304
+"England","Bassetlaw",44878,78161,57.417382070342
+"England","Bath",48130,69662,69.0907524905975
+"England","Battersea",47082,72827,64.6490999217323
+"England","Beaconsfield",47726,72751,65.6018473972866
+"England","Beckenham and Penge",52222,77198,67.6468302287624
+"England","Bedford",40659,72478,56.0984022737934
+"England","Bermondsey and Old Southwark",37603,69482,54.1190524164532
+"England","Bethnal Green and Stepney",46647,81439,57.2784538120557
+"England","Beverley and Holderness",44897,71994,62.3621412895519
+"England","Bexhill and Battle",47750,72198,66.1375661375661
+"England","Bexleyheath and Crayford",43461,70297,61.8248289400686
+"England","Bicester and Woodstock",50219,74353,67.5413231476874
+"England","Birkenhead",43134,78091,55.2355585150658
+"England","Birmingham Edgbaston",37428,71787,52.1375736553972
+"England","Birmingham Erdington",34137,77463,44.0687812245846
+"England","Birmingham Hall Green and Moseley",41606,76936,54.0787147759176
+"England","Birmingham Hodge Hill and Solihull North",34136,77737,43.912165378134
+"England","Birmingham Ladywood",36579,83693,43.7061641953329
+"England","Birmingham Northfield",37652,74048,50.8480985306828
+"England","Birmingham Perry Barr",37476,76350,49.0844793713163
+"England","Birmingham Selly Oak",38423,75678,50.7716905837892
+"England","Birmingham Yardley",36144,73203,49.3750256137044
+"England","Bishop Auckland",40427,70745,57.1446745353028
+"England","Blackburn",38887,73263,53.0786345085514
+"England","Blackley and Middleton South",31340,72303,43.3453660290721
+"England","Blackpool North and Fleetwood",41810,73339,57.0092311048692
+"England","Blackpool South",35180,77460,45.416989413891
+"England","Blaydon and Consett",42216,70487,59.8918949593542
+"England","Blyth and Ashington",40401,76595,52.7462628108884
+"England","Bognor Regis and Littlehampton",47827,76854,62.230983423114
+"England","Bolsover",42434,77207,54.9613377025399
+"England","Bolton North East",43359,80011,54.1912986964292
+"England","Bolton South and Walkden",36930,79622,46.3816533118987
+"England","Bolton West",44598,74933,59.5171686706791
+"England","Bootle",38880,73037,53.2332927146515
+"England","Boston and Skegness",40455,75811,53.3629684346599
+"England","Bournemouth East",44910,72354,62.0698233684385
+"England","Bournemouth West",39418,70259,56.1038443473434
+"England","Bracknell",43837,71660,61.1735975439576
+"England","Bradford East",37216,75164,49.5130647650471
+"England","Bradford South",33042,70999,46.5386836434316
+"England","Bradford West",37081,77897,47.6026034378731
+"England","Braintree",49028,77673,63.1210330488072
+"England","Brent East",37802,77547,48.7472113685894
+"England","Brent West",41376,80027,51.7025503892436
+"England","Brentford and Isleworth",45254,79423,56.9784571219924
+"England","Brentwood and Ongar",48332,75352,64.1416286229961
+"England","Bridgwater",40129,71571,56.0687988151626
+"England","Bridlington and The Wolds",42937,74438,57.6815604932964
+"England","Brigg and Immingham",42508,73099,58.151274299238
+"England","Brighton Kemptown and Peacehaven",40686,68784,59.1503838101884
+"England","Brighton Pavilion",52363,74786,70.0171155029016
+"England","Bristol Central",43365,62735,69.124093408783
+"England","Bristol East",46109,75917,60.7360670205619
+"England","Bristol North East",41989,70076,59.9192305496889
+"England","Bristol North West",48464,74869,64.731731424221
+"England","Bristol South",43403,75533,57.4623012458131
+"England","Broadland and Fakenham",49513,76863,64.4172098408857
+"England","Bromley and Biggin Hill",46788,70713,66.1660515039667
+"England","Bromsgrove",50405,76468,65.9164617879374
+"England","Broxbourne",42952,75210,57.1094269379072
+"England","Broxtowe",47838,70440,67.9131175468484
+"England","Buckingham and Bletchley",47641,74832,63.6639405601882
+"England","Burnley",39719,74954,52.991167916322
+"England","Burton and Uttoxeter",45627,77994,58.5006538964536
+"England","Bury North",45520,77686,58.5948562160492
+"England","Bury South",42214,75326,56.0417385763216
+"England","Bury St Edmunds and Stowmarket",50893,78479,64.8491953261382
+"England","Calder Valley",49608,77364,64.1228478362029
+"England","Camborne and Redruth",47785,74342,64.2772591536413
+"England","Cambridge",42100,70321,59.8683181410958
+"England","Cannock Chase",42953,76974,55.8019591030738
+"England","Canterbury",47231,71155,66.3776263087626
+"England","Carlisle",45979,77863,59.0511539498863
+"England","Carshalton and Wallington",46670,74362,62.7605497431484
+"England","Castle Point",40633,71026,57.2086278264298
+"England","Central Devon",53432,75385,70.8788220468263
+"England","Central Suffolk and North Ipswich",46423,73046,63.5531035238069
+"England","Chatham and Aylesford",40845,75109,54.3809663289353
+"England","Cheadle",50731,74383,68.2024118414154
+"England","Chelmsford",50716,76970,65.8906067298948
+"England","Chelsea and Fulham",47116,78468,60.0448590508233
+"England","Cheltenham",49542,76144,65.0635637739021
+"England","Chesham and Amersham",54455,74889,72.7142838067006
+"England","Chester North and Neston",44694,70215,63.6530655842769
+"England","Chester South and Eddisbury",52486,74284,70.6558612891067
+"England","Chesterfield",41555,71645,58.001256193733
+"England","Chichester",51947,78374,66.2809094852885
+"England","Chingford and Woodford Green",48512,74010,65.5478989325767
+"England","Chippenham",49512,74107,66.8115022872333
+"England","Chipping Barnet",50859,78038,65.1720956457111
+"England","Chorley",33964,74801,45.4058100827529
+"England","Christchurch",47335,71060,66.6127216436814
+"England","Cities of London and Westminster",39215,73369,53.4490043478853
+"England","City of Durham",40627,70583,57.5591856396016
+"England","Clacton",45958,78245,58.7360214710205
+"England","Clapham and Brixton Hill",42741,74159,57.6342723068003
+"England","Colchester",44903,78662,57.0834710533676
+"England","Colne Valley",46221,72638,63.631983259451
+"England","Congleton",50125,74243,67.5147825384211
+"England","Corby and East Northamptonshire",49589,78770,62.95417036943
+"England","Coventry East",37014,75773,48.8485344383883
+"England","Coventry North West",42030,75036,56.0131137054214
+"England","Coventry South",42731,76232,56.0538881309686
+"England","Cramlington and Killingworth",45394,76228,59.5502964789841
+"England","Crawley",45642,75569,60.3977821593511
+"England","Crewe and Nantwich",47197,78423,60.1825994924958
+"England","Croydon East",43779,76595,57.1564723545923
+"England","Croydon South",49378,74889,65.9349170105089
+"England","Croydon West",38122,77891,48.9427533347884
+"England","Dagenham and Rainham",38867,76475,50.8231448185682
+"England","Darlington",42378,70672,59.9643423137876
+"England","Dartford",44488,75426,58.9823137910005
+"England","Daventry",53082,80879,65.6313752642837
+"England","Derby North",40919,71879,56.9276144631951
+"England","Derby South",37399,72944,51.2708379030489
+"England","Derbyshire Dales",51272,73324,69.9252632153183
+"England","Dewsbury and Batley",38070,71685,53.1073446327684
+"England","Didcot and Wantage",54733,80689,67.8320464995229
+"England","Doncaster Central",37944,74678,50.8101448887222
+"England","Doncaster East and the Isle of Axholme",39132,70154,55.7801408330245
+"England","Doncaster North",31002,69759,44.4415774308691
+"England","Dorking and Horley",49965,71645,69.7396887431084
+"England","Dover and Deal",47775,76406,62.5278119519409
+"England","Droitwich and Evesham",49609,76624,64.7434224263938
+"England","Dudley",35796,70151,51.0270701771892
+"England","Dulwich and West Norwood",45378,74259,61.1077445158163
+"England","Dunstable and Leighton Buzzard",46045,76742,59.9997393865159
+"England","Ealing Central and Acton",47769,78436,60.9018817889744
+"England","Ealing North",43232,74820,57.7813418871959
+"England","Ealing Southall",46816,78669,59.5100992767164
+"England","Earley and Woodley",45914,73548,62.4272583890792
+"England","Easington",34324,69395,49.461776785071
+"England","East Grinstead and Uckfield",50393,75385,66.8475160841016
+"England","East Ham",37892,79219,47.8319595046643
+"England","East Hampshire",50006,70659,70.7708855205989
+"England","East Surrey",49196,73307,67.1095529758413
+"England","East Thanet",42713,74927,57.0061526552511
+"England","East Wiltshire",47193,74139,63.654756605835
+"England","East Worthing and Shoreham",49078,74738,65.6667291070138
+"England","Eastbourne",45605,72590,62.8254580520733
+"England","Eastleigh",46420,69965,66.3474594440077
+"England","Edmonton and Winchmore Hill",41045,75792,54.1547920624868
+"England","Ellesmere Port and Bromborough",41964,70799,59.2720236161528
+"England","Eltham and Chislehurst",45566,73979,61.593154814204
+"England","Ely and East Cambridgeshire",52369,79112,66.1960258873496
+"England","Enfield North",43492,78770,55.2139139266218
+"England","Epping Forest",41753,72229,57.8064212435448
+"England","Epsom and Ewell",54525,76513,71.2623998536196
+"England","Erewash",43006,71501,60.1474105257269
+"England","Erith and Thamesmead",40379,78740,51.2814325628651
+"England","Esher and Walton",53880,74042,72.7695091974825
+"England","Exeter",40195,67840,59.2497051886792
+"England","Exmouth and Exeter East",51316,79983,64.1586337096633
+"England","Fareham and Waterlooville",50123,76947,65.1396415714713
+"England","Farnham and Bordon",53015,75920,69.8300842992624
+"England","Faversham and Mid Kent",46594,74301,62.7097885627381
+"England","Feltham and Heston",38887,76982,50.5144059650308
+"England","Filton and Bradley Stoke",50367,77582,64.9209868268413
+"England","Finchley and Golders Green",49289,77500,63.5987096774194
+"England","Folkestone and Hythe",43246,70056,61.7306155075939
+"England","Forest of Dean",48091,72857,66.0073843282046
+"England","Frome and East Somerset",46716,71593,65.2521894598634
+"England","Fylde",47960,77100,62.2049286640726
+"England","Gainsborough",46685,75836,61.5604725987658
+"England","Gateshead Central and Whickham",40217,69827,57.5951995646383
+"England","Gedling",48722,77006,63.2703945147131
+"England","Gillingham and Rainham",41140,73523,55.955279300355
+"England","Glastonbury and Somerton",47642,73268,65.024294371349
+"England","Gloucester",45692,79475,57.4922931739541
+"England","Godalming and Ash",54696,75816,72.1430832541944
+"England","Goole and Pocklington",49742,79925,62.2358461057241
+"England","Gorton and Denton",36560,76524,47.7758611677382
+"England","Gosport",44277,73261,60.4373404676431
+"England","Grantham and Bourne",46125,73285,62.93920993382
+"England","Gravesham",43232,73094,59.1457575177169
+"England","Great Grimsby and Cleethorpes",36619,76157,48.0835642160274
+"England","Great Yarmouth",40748,73317,55.5778332446772
+"England","Greenwich and Woolwich",42719,73073,58.460717364827
+"England","Guildford",48294,70662,68.3450793920353
+"England","Hackney North and Stoke Newington",40959,77812,52.6384105279391
+"England","Hackney South and Shoreditch",41701,78277,53.2736308238691
+"England","Halesowen",38578,68549,56.2779909261988
+"England","Halifax",40214,77516,51.8783218948346
+"England","Hamble Valley",54004,79478,67.9483630690254
+"England","Hammersmith and Chiswick",46021,75860,60.6656999736356
+"England","Hampstead and Highgate",48550,80029,60.665508753077
+"England","Harborough, Oadby and Wigston",50386,77075,65.3726889393448
+"England","Harlow",43357,74683,58.0547112462006
+"England","Harpenden and Berkhamsted",54336,72242,75.2138645109493
+"England","Harrogate and Knaresborough",52064,77955,66.7872490539414
+"England","Harrow East",47777,76513,62.4429835452799
+"England","Harrow West",45241,79902,56.6206102475533
+"England","Hartlepool",35511,71437,49.7095342749556
+"England","Harwich and North Essex",48043,76296,62.9692251232044
+"England","Hastings and Rye",45990,75939,60.561766681152
+"England","Havant",42186,72323,58.3299918421526
+"England","Hayes and Harlington",38315,74405,51.4951952153753
+"England","Hazel Grove",45998,72846,63.1441671471323
+"England","Hemel Hempstead",44108,71035,62.0933342718378
+"England","Hendon",41256,74865,55.1071929473052
+"England","Henley and Thame",53157,73749,72.0782654680064
+"England","Hereford and South Herefordshire",45572,72203,63.1164910045289
+"England","Herne Bay and Sandwich",48827,77869,62.704028560788
+"England","Hertford and Stortford",54009,78915,68.4394601786733
+"England","Hertsmere",48007,73465,65.3467637650582
+"England","Hexham",51828,76431,67.8101817325431
+"England","Heywood and Middleton North",37130,73328,50.6355007636919
+"England","High Peak",49206,74385,66.1504335551522
+"England","Hinckley and Bosworth",47799,76438,62.5330333080405
+"England","Hitchin",52510,75877,69.2041066462828
+"England","Holborn and St Pancras",38602,71300,54.140252454418
+"England","Honiton and Sidmouth",50655,75537,67.0598514635212
+"England","Hornchurch and Upminster",46911,75438,62.1848405312972
+"England","Hornsey and Friern Barnet",48642,69885,69.6029190813479
+"England","Horsham",55499,79150,70.1187618445989
+"England","Houghton and Sunderland South",40032,78448,51.0299816438915
+"England","Hove and Portslade",51909,74063,70.087628100401
+"England","Huddersfield",40165,77795,51.6292820875378
+"England","Huntingdon",52040,79074,65.8117712522447
+"England","Hyndburn",36374,67147,54.1707001057382
+"England","Ilford North",46888,78657,59.6107148759805
+"England","Ilford South",41170,80993,50.8315533441162
+"England","Ipswich",44071,75396,58.4527030611704
+"England","Isle of Wight East",34078,55855,61.0115477575866
+"England","Isle of Wight West",34290,55406,61.8886041222972
+"England","Islington North",49006,72852,67.2678855762368
+"England","Islington South and Finsbury",42754,74122,57.6805806643102
+"England","Jarrow and Gateshead East",36728,70272,52.2654826958106
+"England","Keighley and Ilkley",46186,74367,62.1055037852811
+"England","Kenilworth and Southam",53320,74923,71.1663975014348
+"England","Kensington and Bayswater",41908,77306,54.2105399322174
+"England","Kettering",50231,79360,63.2951108870968
+"England","Kingston and Surbiton",50664,77353,65.4971365040787
+"England","Kingston upon Hull East",29816,70650,42.2024062278839
+"England","Kingston upon Hull North and Cottingham",38228,75280,50.7810839532412
+"England","Kingston upon Hull West and Haltemprice",38178,73252,52.1187134822257
+"England","Kingswinford and South Staffordshire",45180,71645,63.06092539605
+"England","Knowsley",36047,71964,50.0903229392474
+"England","Lancaster and Wyre",43008,74760,57.5280898876404
+"England","Leeds Central and Headingley",31595,70554,44.7813022649318
+"England","Leeds East",39388,76207,51.685540698361
+"England","Leeds North East",45167,70178,64.3606258371569
+"England","Leeds North West",49777,71592,69.5287182925467
+"England","Leeds South",31678,75953,41.7073716640554
+"England","Leeds South West and Morley",40209,71854,55.9593063712528
+"England","Leeds West and Pudsey",38494,70069,54.9372761135452
+"England","Leicester East",46714,76560,61.0161964472309
+"England","Leicester South",41837,70867,59.0359405647198
+"England","Leicester West",35397,74102,47.7679414860598
+"England","Leigh and Atherton",41170,79978,51.4766560804221
+"England","Lewes",53173,76166,69.8119896016595
+"England","Lewisham East",40637,73380,55.37884982284
+"England","Lewisham North",44167,74205,59.5202479617276
+"England","Lewisham West and East Dulwich",46414,69386,66.8924566915516
+"England","Leyton and Wanstead",43732,71491,61.1713362521157
+"England","Lichfield",49104,76118,64.5103654851678
+"England","Lincoln",42160,72315,58.3004909078338
+"England","Liverpool Garston",41993,69282,60.6117028954129
+"England","Liverpool Riverside",32381,71380,45.3642476884281
+"England","Liverpool Walton",36886,69317,53.2134974104477
+"England","Liverpool Wavertree",39815,70581,56.4103653957864
+"England","Liverpool West Derby",38006,69934,54.3455257814511
+"England","Loughborough",42259,68961,61.2795638114296
+"England","Louth and Horncastle",46479,76880,60.4565556711759
+"England","Lowestoft",41824,74332,56.2664801162353
+"England","Luton North",38745,74866,51.7524644030668
+"England","Luton South and South Bedfordshire",38382,77312,49.6455918874172
+"England","Macclesfield",52792,76416,69.0850083752094
+"England","Maidenhead",50329,75687,66.4962278858985
+"England","Maidstone and Malling",46389,76449,60.6796687988071
+"England","Makerfield",40263,76641,52.5345441734842
+"England","Maldon",49841,78282,63.6685317186582
+"England","Manchester Central",39725,85204,46.623397962537
+"England","Manchester Rusholme",29033,72608,39.9859519612164
+"England","Manchester Withington",41731,70555,59.146764935157
+"England","Mansfield",41087,74535,55.1244381834038
+"England","Melksham and Devizes",51203,73482,69.6810103154514
+"England","Melton and Syston",45986,74316,61.8790031756284
+"England","Meriden and Solihull East",44035,73659,59.7822397806107
+"England","Mid Bedfordshire",49621,75457,65.7606318830592
+"England","Mid Buckinghamshire",53951,75622,71.3429954246119
+"England","Mid Cheshire",41509,70384,58.9750511479882
+"England","Mid Derbyshire",47543,69917,67.9991990503025
+"England","Mid Dorset and North Poole",49514,75294,65.7608840013813
+"England","Mid Leicestershire",48050,75924,63.286971181708
+"England","Mid Norfolk",45897,75238,61.0024189904038
+"England","Mid Sussex",53328,75969,70.1970540615251
+"England","Middlesbrough South and East Cleveland",38035,70331,54.079993175129
+"England","Middlesbrough and Thornaby East",34407,75123,45.8008865460645
+"England","Milton Keynes Central",47729,81078,58.8680036508054
+"England","Milton Keynes North",45977,70709,65.0228400910775
+"England","Mitcham and Morden",45255,77282,58.558267125592
+"England","Morecambe and Lunesdale",48059,76424,62.8846959070449
+"England","New Forest East",45230,70618,64.048826078337
+"England","New Forest West",46337,68644,67.5033506205932
+"England","Newark",53459,79783,67.0055024253287
+"England","Newbury",48930,71982,67.9753271651246
+"England","Newcastle upon Tyne Central and West",41355,76822,53.8322355575226
+"England","Newcastle upon Tyne East and Wallsend",42321,76245,55.5065905961047
+"England","Newcastle upon Tyne North",48617,74768,65.0238069762465
+"England","Newcastle-under-Lyme",39618,67815,58.420703384207
+"England","Newton Abbot",47992,73885,64.9549976314543
+"England","Newton Aycliffe and Spennymoor",39846,72215,55.1769023056152
+"England","Normanton and Hemsworth",36349,75645,48.0520853989028
+"England","North Bedfordshire",51561,78850,65.3912492073557
+"England","North Cornwall",51245,76741,66.7765601177988
+"England","North Cotswolds",50229,73203,68.6160403262161
+"England","North Devon",51417,79079,65.019790336246
+"England","North Dorset",49683,72690,68.349153941395
+"England","North Durham",41565,73226,56.7626252970256
+"England","North East Cambridgeshire",39176,71511,54.7831802100376
+"England","North East Derbyshire",45866,73234,62.6293797962695
+"England","North East Hampshire",55560,76923,72.2280722280722
+"England","North East Hertfordshire",52520,77697,67.5959174742912
+"England","North East Somerset and Hanham",51125,73889,69.1916252757515
+"England","North Herefordshire",50362,72797,69.181422311359
+"England","North Norfolk",47043,71438,65.8515076009967
+"England","North Northumberland",48843,74190,65.8350181965224
+"England","North Shropshire",49594,77573,63.9320382091707
+"England","North Somerset",53766,74426,72.240883562196
+"England","North Warwickshire and Bedworth",40940,69752,58.6936575295332
+"England","North West Cambridgeshire",44424,75915,58.5180794309425
+"England","North West Essex",54386,79698,68.2401064016663
+"England","North West Hampshire",50823,78629,64.6364572867517
+"England","North West Leicestershire",48572,77750,62.4720257234727
+"England","North West Norfolk",44566,74415,59.8884633474434
+"England","Northampton North",41813,75575,55.3264968574264
+"England","Northampton South",43904,70393,62.3698379100195
+"England","Norwich North",45765,73717,62.0820163598627
+"England","Norwich South",45095,76296,59.1053266226277
+"England","Nottingham East",36401,69395,52.45478780892
+"England","Nottingham North and Kimberley",35007,73768,47.455536275892
+"England","Nottingham South",32879,64255,51.1695587891993
+"England","Nuneaton",41213,71843,57.3653661456231
+"England","Old Bexley and Sidcup",47633,73198,65.0741823547092
+"England","Oldham East and Saddleworth",40065,73460,54.5398856520555
+"England","Oldham West, Chadderton and Royton",38573,76031,50.7332535413187
+"England","Orpington",46073,71284,64.6330172268672
+"England","Ossett and Denby Dale",43873,72312,60.6718110410444
+"England","Oxford East",39341,71845,54.758159927622
+"England","Oxford West and Abingdon",45998,69851,65.8515984023135
+"England","Peckham",38797,72127,53.7898429159677
+"England","Pendle and Clitheroe",46754,78796,59.335499263922
+"England","Penistone and Stocksbridge",43965,70435,62.4192517924327
+"England","Penrith and Solway",49281,77935,63.2334637839225
+"England","Peterborough",41872,73378,57.0634250047698
+"England","Plymouth Moor View",42856,74724,57.3523901290081
+"England","Plymouth Sutton and Devonport",42095,75313,55.8934048570632
+"England","Pontefract, Castleford and Knottingley",35957,74618,48.1881047468439
+"England","Poole",44495,72509,61.3647960942779
+"England","Poplar and Limehouse",43051,84116,51.180512625422
+"England","Portsmouth North",41593,70446,59.0423870766261
+"England","Portsmouth South",38928,73711,52.8116563335187
+"England","Preston",39993,77400,51.6705426356589
+"England","Putney",49295,72686,67.8191123462565
+"England","Queen's Park and Maida Vale",38343,75558,50.7464464384976
+"England","Rawmarsh and Conisbrough",33904,69133,49.0417022261438
+"England","Rayleigh and Wickford",47978,76576,62.6540952778939
+"England","Reading Central",45291,73600,61.5366847826087
+"England","Reading West and Mid Berkshire",46551,68781,67.6800279146857
+"England","Redcar",38209,70241,54.3970045984539
+"England","Redditch",42375,71042,59.6478139692013
+"England","Reigate",53161,77102,68.9489248009131
+"England","Ribble Valley",52023,80484,64.6376919636201
+"England","Richmond Park",52205,74988,69.6178055155492
+"England","Richmond and Northallerton",48526,73886,65.6768535311155
+"England","Rochdale",39688,72507,54.7367840346449
+"England","Rochester and Strood",42598,74257,57.3656355629772
+"England","Romford",44047,72928,60.3979267222466
+"England","Romsey and Southampton North",50027,71871,69.6066563704415
+"England","Rossendale and Darwen",44618,74440,59.938205265986
+"England","Rother Valley",41608,69459,59.9029643386746
+"England","Rotherham",36932,75929,48.6401770074675
+"England","Rugby",49004,74901,65.4250277032349
+"England","Ruislip, Northwood and Pinner",47091,71683,65.6934001088124
+"England","Runcorn and Helsby",42235,70801,59.6531122441773
+"England","Runnymede and Weybridge",48253,73610,65.5522347507132
+"England","Rushcliffe",57744,79160,72.9459322890349
+"England","Rutland and Stamford",48577,71763,67.6908713403843
+"England","Salford",39704,83633,47.4740831968242
+"England","Salisbury",50173,71802,69.876883652266
+"England","Scarborough and Whitby",44221,74544,59.3220111611934
+"England","Scunthorpe",39051,73855,52.875228488254
+"England","Sefton Central",47449,74284,63.8751278875666
+"England","Selby",49222,78043,63.0703586484374
+"England","Sevenoaks",49899,73708,67.6982145764368
+"England","Sheffield Brightside and Hillsborough",31612,70389,44.9104263450255
+"England","Sheffield Central",31803,60594,52.4853945935241
+"England","Sheffield Hallam",51601,72900,70.7832647462277
+"England","Sheffield Heeley",38446,73452,52.3416653052333
+"England","Sheffield South East",35771,74156,48.2374993257457
+"England","Sherwood Forest",48660,78896,61.6761306023119
+"England","Shipley",48303,74130,65.1598543099959
+"England","Shrewsbury",51560,76599,67.3115837021371
+"England","Sittingbourne and Sheppey",40998,79067,51.8522265926366
+"England","Skipton and Ripon",53450,79238,67.4550089603473
+"England","Sleaford and North Hykeham",48565,75651,64.1961110890801
+"England","Slough",43278,81295,53.2357463558644
+"England","Smethwick",35115,72863,48.1931844694838
+"England","Solihull West and Shirley",46877,71816,65.2737551520553
+"England","South Basildon and East Thurrock",39549,72673,54.4204862878923
+"England","South Cambridgeshire",54885,77327,70.9777955953289
+"England","South Cotswolds",52287,71971,72.6500951772242
+"England","South Derbyshire",45737,73714,62.0465583199935
+"England","South Devon",49004,72261,67.8152807185065
+"England","South Dorset",49037,75924,64.5869553764291
+"England","South East Cornwall",49286,72654,67.8365953698351
+"England","South Holland and The Deepings",45930,78473,58.5296853694901
+"England","South Leicestershire",51359,78511,65.4163110901657
+"England","South Norfolk",49579,74006,66.9932167662081
+"England","South Northamptonshire",53697,78233,68.6372758298928
+"England","South Ribble",46720,73420,63.6338872241896
+"England","South Shields",36824,68366,53.8630313313635
+"England","South Shropshire",51653,76677,67.364398711478
+"England","South Suffolk",48801,74619,65.4002331845777
+"England","South West Devon",52242,77600,67.3221649484536
+"England","South West Hertfordshire",48254,71737,67.2651490862456
+"England","South West Norfolk",44335,74724,59.3316738932605
+"England","South West Wiltshire",46168,73071,63.1823842564081
+"England","Southampton Itchen",38053,68379,55.6501265008263
+"England","Southampton Test",35805,65520,54.6474358974359
+"England","Southend East and Rochford",39656,70217,56.4763518805987
+"England","Southend West and Leigh",46968,75154,62.4956755462118
+"England","Southgate and Wood Green",45671,77542,58.8984034458745
+"England","Southport",45059,73641,61.1873820290327
+"England","Spelthorne",46166,73782,62.5708167303678
+"England","Spen Valley",41058,72642,56.5210208970017
+"England","St Albans",51614,72739,70.9578080534514
+"England","St Austell and Newquay",46732,76076,61.428045638572
+"England","St Helens North",40474,75483,53.6200204019448
+"England","St Helens South and Whiston",38035,71569,53.1445178778521
+"England","St Ives",48106,69978,68.7444625453714
+"England","St Neots and Mid Cambridgeshire",52882,78115,67.6976252960379
+"England","Stafford",46009,70608,65.1611715386359
+"England","Staffordshire Moorlands",43302,69892,61.9555886224461
+"England","Stalybridge and Hyde",37239,72265,51.5311699993081
+"England","Stevenage",42715,70976,60.1823151487827
+"England","Stockport",43683,76632,57.0036016285625
+"England","Stockton North",37401,70242,53.2459212437004
+"England","Stockton West",48638,71868,67.6768520064563
+"England","Stoke-on-Trent Central",35289,73812,47.8092993009267
+"England","Stoke-on-Trent North",36150,69854,51.7507945142726
+"England","Stoke-on-Trent South",40942,70002,58.486900374275
+"England","Stone, Great Wyrley and Penkridge",42770,71561,59.7671916267241
+"England","Stourbridge",39878,68311,58.3771281345611
+"England","Stratford and Bow",43435,80735,53.7994673933238
+"England","Stratford-on-Avon",52959,75714,69.9461130042
+"England","Streatham and Croydon North",44553,76313,58.3819270635409
+"England","Stretford and Urmston",46002,75153,61.2111292962357
+"England","Stroud",55221,77905,70.8824850779796
+"England","Suffolk Coastal",49451,74522,66.3575856793967
+"England","Sunderland Central",39957,76145,52.4748834460569
+"England","Surrey Heath",47788,71934,66.4331192481997
+"England","Sussex Weald",49175,72885,67.469300953557
+"England","Sutton Coldfield",48333,74080,65.2443304535637
+"England","Sutton and Cheam",47606,72303,65.8423578551374
+"England","Swindon North",44165,73224,60.3149240686114
+"England","Swindon South",44794,72575,61.7209782983121
+"England","Tamworth",43788,75055,58.3412164412764
+"England","Tatton",51909,75978,68.3210929479586
+"England","Taunton and Wellington",50294,78680,63.9222165734621
+"England","Telford",40730,73808,55.1837199219597
+"England","Tewkesbury",48539,73458,66.0772141904217
+"England","The Wrekin",50020,78942,63.3629753489904
+"England","Thirsk and Malton",49797,78468,63.4615384615385
+"England","Thornbury and Yate",53367,78192,68.2512277470841
+"England","Thurrock",37558,73392,51.1745149335077
+"England","Tipton and Wednesbury",31850,74098,42.9836162919377
+"England","Tiverton and Minehead",47491,72087,65.8801170807497
+"England","Tonbridge",50328,72799,69.1328177584857
+"England","Tooting",52943,76168,69.5081924167629
+"England","Torbay",46115,76185,60.5302881144582
+"England","Torridge and Tavistock",50820,74727,68.007547472801
+"England","Tottenham",40148,75906,52.8917345137407
+"England","Truro and Falmouth",50264,72982,68.8717766024499
+"England","Tunbridge Wells",54250,78738,68.8993878432269
+"England","Twickenham",53635,74980,71.5324086423046
+"England","Tynemouth",48418,73194,66.1502308932426
+"England","Uxbridge and South Ruislip",45914,74745,61.4275202354673
+"England","Vauxhall and Camberwell Green",37536,69652,53.8907712628496
+"England","Wakefield and Rothwell",40656,75067,54.1596174084485
+"England","Wallasey",42746,74082,57.7009260009179
+"England","Walsall and Bloxwich",37191,74951,49.6204186735334
+"England","Walthamstow",45668,74474,61.3207293820662
+"England","Warrington North",40041,70601,56.7144941289783
+"England","Warrington South",49672,78394,63.3619919891828
+"England","Warwick and Leamington",49198,76294,64.4847563373267
+"England","Washington and Gateshead South",37021,70972,52.162824775968
+"England","Watford",44455,73100,60.8139534883721
+"England","Waveney Valley",49072,73056,67.1703898379325
+"England","Weald of Kent",50712,75987,66.7377314540645
+"England","Wellingborough and Rushden",43985,77542,56.7240979082304
+"England","Wells and Mendip Hills",50368,73538,68.4924800783268
+"England","Welwyn Hatfield",48455,75259,64.3843261271077
+"England","West Bromwich",36481,74025,49.2819993245525
+"England","West Dorset",52605,75998,69.2189268138635
+"England","West Ham and Beckton",36348,78964,46.0311027810141
+"England","West Lancashire",44200,74081,59.6644213766013
+"England","West Suffolk",46161,77145,59.8366712035777
+"England","West Worcestershire",54687,79246,69.0091613456831
+"England","Westmorland and Lonsdale",49533,72029,68.7681350567133
+"England","Weston-super-Mare",42390,71396,59.3730741217995
+"England","Wetherby and Easingwold",52259,74314,70.3218774389752
+"England","Whitehaven and Workington",41840,73198,57.160031694855
+"England","Widnes and Halewood",38116,70161,54.3264776727812
+"England","Wigan",40899,77538,52.7470401609533
+"England","Wimbledon",54985,76334,72.032121990201
+"England","Winchester",57076,78289,72.9042394206083
+"England","Windsor",45246,73334,61.6985300133635
+"England","Wirral West",49951,72838,68.5782146681677
+"England","Witham",50603,78991,64.061728551354
+"England","Witney",50584,75448,67.0448520835542
+"England","Woking",48145,72969,65.9800737299401
+"England","Wokingham",53999,75082,71.920034096055
+"England","Wolverhampton North East",33289,70715,47.074878031535
+"England","Wolverhampton South East",33382,77473,43.0885598853794
+"England","Wolverhampton West",43657,77851,56.0776354831666
+"England","Worcester",46036,74931,61.4378561610015
+"England","Worsley and Eccles",42543,78643,54.0963594979846
+"England","Worthing West",50997,77039,66.1963421124366
+"England","Wycombe",44637,73415,60.8009262412314
+"England","Wyre Forest",45158,77329,58.3972377762547
+"England","Wythenshawe and Sale East",39132,77767,50.3195442797073
+"England","Yeovil",48952,79918,61.2527841037063
+"England","York Central",43323,79557,54.4552962027226
+"England","York Outer",51106,76228,67.0436060240332
+"Northern Ireland","Belfast East",42706,72917,58.5679608321791
+"Northern Ireland","Belfast North",40452,74240,54.4881465517241
+"Northern Ireland","Belfast South and Mid Down",43491,74749,58.1827181634537
+"Northern Ireland","Belfast West",39743,75346,52.7473256709049
+"Northern Ireland","East Antrim",39675,73302,54.1253990341328
+"Northern Ireland","East Londonderry",41277,75707,54.5220389131784
+"Northern Ireland","Fermanagh and South Tyrone",51076,77828,65.6267667163489
+"Northern Ireland","Foyle",38358,73496,52.1905954065527
+"Northern Ireland","Lagan Valley",49081,82201,59.7085193610783
+"Northern Ireland","Mid Ulster",45445,74000,61.4121621621622
+"Northern Ireland","Newry and Armagh",45942,78244,58.716323296355
+"Northern Ireland","North Antrim",41185,74697,55.1360831090941
+"Northern Ireland","North Down",43296,73885,58.5991743926372
+"Northern Ireland","South Antrim",42908,77058,55.6827324872174
+"Northern Ireland","South Down",45243,76248,59.3366383380548
+"Northern Ireland","Strangford",38909,74525,52.2093257296209
+"Northern Ireland","Upper Bann",47358,81249,58.2874866152199
+"Northern Ireland","West Tyrone",43695,74269,58.8334298294039
+"Scotland","Aberdeen North",42095,75925,55.4428712545275
+"Scotland","Aberdeen South",46345,77328,59.9330126215601
+"Scotland","Aberdeenshire North and Moray East",38188,70058,54.509121014017
+"Scotland","Airdrie and Shotts",36666,70199,52.2315132694198
+"Scotland","Alloa and Grangemouth",41201,70680,58.2923033389926
+"Scotland","Angus and Perthshire Glens",47348,76668,61.7571868315334
+"Scotland","Arbroath and Broughty Ferry",44117,76149,57.9351009205636
+"Scotland","Argyll, Bute and South Lochaber",44862,71756,62.5202073694186
+"Scotland","Ayr, Carrick and Cumnock",40936,70340,58.1973272675576
+"Scotland","Bathgate and Linlithgow",42065,72185,58.2738796148784
+"Scotland","Berwickshire, Roxburgh and Selkirk",46558,76438,60.9094952772181
+"Scotland","Caithness, Sutherland and Easter Ross",46048,74627,61.7042089324239
+"Scotland","Central Ayrshire",41419,69413,59.6703787474969
+"Scotland","Coatbridge and Bellshill",38731,72667,53.2992967922166
+"Scotland","Cowdenbeath and Kirkcaldy",40814,71845,56.8084069872642
+"Scotland","Cumbernauld and Kirkintilloch",40976,70350,58.2459132906894
+"Scotland","Dumfries and Galloway",45775,78541,58.281661807209
+"Scotland","Dumfriesshire, Clydesdale and Tweeddale",44214,71900,61.4937413073714
+"Scotland","Dundee Central",38848,74221,52.3409816628717
+"Scotland","Dunfermline and Dollar",44537,72824,61.1570361419312
+"Scotland","East Kilbride and Strathaven",46707,76414,61.1236160912922
+"Scotland","East Renfrewshire",50227,74626,67.3049607375446
+"Scotland","Edinburgh East and Musselburgh",45575,76188,59.8191316217777
+"Scotland","Edinburgh North and Leith",49475,78411,63.0970144495033
+"Scotland","Edinburgh South",46826,70838,66.1029391004828
+"Scotland","Edinburgh South West",45664,73784,61.8887563699447
+"Scotland","Edinburgh West",52471,76490,68.5985096090992
+"Scotland","Falkirk",42625,73584,57.9269949989128
+"Scotland","Glasgow East",35445,68987,51.3792453650688
+"Scotland","Glasgow North",34739,67579,51.4050222702319
+"Scotland","Glasgow North East",34091,72610,46.9508332185649
+"Scotland","Glasgow South",42378,70219,60.3511870006693
+"Scotland","Glasgow South West",35669,68871,51.7910296060751
+"Scotland","Glasgow West",39902,69028,57.8055281914585
+"Scotland","Glenrothes and Mid Fife",36139,70655,51.1485386738377
+"Scotland","Gordon and Buchan",43848,69605,62.9954744630414
+"Scotland","Hamilton and Clyde Valley",42084,75480,55.7551669316375
+"Scotland","Inverclyde and Renfrewshire West",40350,70126,57.539286427288
+"Scotland","Inverness, Skye and West Ross-shire",48056,77927,61.6679713064791
+"Scotland","Kilmarnock and Loudoun",42478,74628,56.9196548212467
+"Scotland","Livingston",44840,78043,57.4555052983612
+"Scotland","Lothian East",48102,75456,63.7484096692112
+"Scotland","Mid Dunbartonshire",52738,73603,71.6519707077157
+"Scotland","Midlothian",44165,73554,60.0443211789977
+"Scotland","Moray West, Nairn and Strathspey",46554,77243,60.2695389873516
+"Scotland","Motherwell, Wishaw and Carluke",39026,71777,54.3711773966591
+"Scotland","Na h-Eileanan an Iar",13528,21325,63.4372801875733
+"Scotland","North Ayrshire and Arran",42262,72176,58.5540900022168
+"Scotland","North East Fife",42728,69762,61.248244029701
+"Scotland","Orkney and Shetland",20688,34236,60.4276200490712
+"Scotland","Paisley and Renfrewshire North",41519,71103,58.3927541735229
+"Scotland","Paisley and Renfrewshire South",41283,71574,57.6787660323581
+"Scotland","Perth and Kinross-shire",50077,77261,64.815366096737
+"Scotland","Rutherglen",42484,72674,58.4583207199274
+"Scotland","Stirling and Strathallan",49782,76284,65.2587698599969
+"Scotland","West Aberdeenshire and Kincardine",48958,72994,67.0712661314629
+"Scotland","West Dunbartonshire",39584,69074,57.3066566291224
+"Wales","Aberafan Maesteg",35755,72580,49.2628823367319
+"Wales","Alyn and Deeside",43392,75790,57.2529357435018
+"Wales","Bangor Aberconwy",41660,70527,59.0695761906787
+"Wales","Blaenau Gwent and Rhymney",29922,70153,42.6524881330806
+"Wales","Brecon, Radnor and Cwm Tawe",46548,73114,63.6649615668682
+"Wales","Bridgend",41374,73168,56.5465777389023
+"Wales","Caerfyrddin",45604,74005,61.6228633200459
+"Wales","Caerphilly",38234,72648,52.6291157361524
+"Wales","Cardiff East",39123,72876,53.6843405236292
+"Wales","Cardiff North",47473,71460,66.4329694934229
+"Wales","Cardiff South and Penarth",39176,73060,53.6216808102929
+"Wales","Cardiff West",44757,75697,59.1265175634437
+"Wales","Ceredigion Preseli",46302,75690,61.1732065001982
+"Wales","Clwyd East",47822,76637,62.4006680846067
+"Wales","Clwyd North",41627,75027,55.4826928972237
+"Wales","Dwyfor Meirionnydd",40395,73040,55.3053121577218
+"Wales","Gower",47229,76123,62.0430093401469
+"Wales","Llanelli",40744,71538,56.9543459420168
+"Wales","Merthyr Tydfil and Aberdare",35215,74460,47.2938490464679
+"Wales","Mid and South Pembrokeshire",46629,79033,58.9994053117052
+"Wales","Monmouthshire",50844,74823,67.9523675875065
+"Wales","Montgomeryshire and Glyndŵr",43259,74039,58.4273153338106
+"Wales","Neath and Swansea East",40137,76291,52.6103996539566
+"Wales","Newport East",38531,76683,50.2471212654695
+"Wales","Newport West and Islwyn",41951,75785,55.3552813881375
+"Wales","Pontypridd",39378,75951,51.8465852984161
+"Wales","Rhondda and Ogmore",35806,74493,48.0662612594472
+"Wales","Swansea West",35657,74236,48.0319521525944
+"Wales","Torfaen",35705,71738,49.7713903370599
+"Wales","Vale of Glamorgan",45826,74465,61.5403209561539
+"Wales","Wrexham",40373,70269,57.4549232236121
+"Wales","Ynys Môn",32628,53141,61.3989198547261
