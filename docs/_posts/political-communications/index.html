@@ -118,7 +118,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["index_files/figure-html5/plot1-1.png","index_files/figure-html5/plot2-1.png","party_ab.csv","political-communications_files/anchor-4.2.2/anchor.min.js","political-communications_files/bowser-1.9.3/bowser.min.js","political-communications_files/distill-2.2.21/template.v2.js","political-communications_files/figure-html5/plot1-1.png","political-communications_files/figure-html5/plot2-1.png","political-communications_files/header-attrs-2.30/header-attrs.js","political-communications_files/jquery-3.6.0/jquery-3.6.0.js","political-communications_files/jquery-3.6.0/jquery-3.6.0.min.js","political-communications_files/jquery-3.6.0/jquery-3.6.0.min.map","political-communications_files/popper-2.6.0/popper.min.js","political-communications_files/tippy-6.2.7/tippy-bundle.umd.min.js","political-communications_files/tippy-6.2.7/tippy-light-border.css","political-communications_files/tippy-6.2.7/tippy.css","political-communications_files/tippy-6.2.7/tippy.umd.min.js","political-communications_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["index_files/anchor-4.2.2/anchor.min.js","index_files/bowser-1.9.3/bowser.min.js","index_files/distill-2.2.21/template.v2.js","index_files/figure-html5/plot1-1.png","index_files/figure-html5/plot2-1.png","index_files/header-attrs-2.30/header-attrs.js","index_files/jquery-3.6.0/jquery-3.6.0.js","index_files/jquery-3.6.0/jquery-3.6.0.min.js","index_files/jquery-3.6.0/jquery-3.6.0.min.map","index_files/popper-2.6.0/popper.min.js","index_files/tippy-6.2.7/tippy-bundle.umd.min.js","index_files/tippy-6.2.7/tippy-light-border.css","index_files/tippy-6.2.7/tippy.css","index_files/tippy-6.2.7/tippy.umd.min.js","index_files/webcomponents-2.0.0/webcomponents.js","party_ab.csv","political-communications_files/anchor-4.2.2/anchor.min.js","political-communications_files/bowser-1.9.3/bowser.min.js","political-communications_files/distill-2.2.21/template.v2.js","political-communications_files/figure-html5/plot1-1.png","political-communications_files/figure-html5/plot2-1.png","political-communications_files/header-attrs-2.30/header-attrs.js","political-communications_files/jquery-3.6.0/jquery-3.6.0.js","political-communications_files/jquery-3.6.0/jquery-3.6.0.min.js","political-communications_files/jquery-3.6.0/jquery-3.6.0.min.map","political-communications_files/popper-2.6.0/popper.min.js","political-communications_files/tippy-6.2.7/tippy-bundle.umd.min.js","political-communications_files/tippy-6.2.7/tippy-light-border.css","political-communications_files/tippy-6.2.7/tippy.css","political-communications_files/tippy-6.2.7/tippy.umd.min.js","political-communications_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -1541,10 +1541,10 @@ homepage versions influence supporter signup rates across demographics.</p></p>
 
 
 <div class="d-article">
-<p>Overview</p>
-<p>This project evaluates a digital A/B test for a political party to determine which homepage version—the standard control or an “issue-focused” alternative—best drives supporter signups. Beyond simply finding the “winner,” this analysis investigates how different demographics, such as age and political interest, respond to the messaging. This allows for a data-driven approach to understanding the Average Treatment Effect (ATE) and optimising digital political communication.</p>
-<p>Visualising the Signup Distribution</p>
-<p>The first step in the analysis is to compare the signup rates between the two versions of the homepage to visualize the overall density and distribution of the results.</p>
+<h2 id="overview">Overview</h2>
+<p>This project evaluates a digital A/B test for a political party to determine which homepage version the standard control or an “issue-focused” alternative best drives supporter signups. Beyond simply finding the “winner,” this analysis investigates how different demographics, such as age and political interest, respond to the messaging. This allows for a data-driven approach to understanding the Average Treatment Effect (ATE) and optimising digital political communication.</p>
+<h2 id="visualising-the-signup-distribution">Visualising the Signup Distribution</h2>
+<p>The first step in the analysis is to compare the signup rates between the two versions of the homepage to visualise the overall density and distribution of the results.</p>
 <div class="layout-chunk" data-layout="l-body">
 <details>
 <summary>
@@ -1577,11 +1577,11 @@ Show code
 <span>  <span class='op'>)</span></span></code></pre>
 </div>
 </details>
-<p><img src="index_files/figure-html5/plot1-1.png" width="624" /></p>
+<p><img src="index_files/figure-html5/plot1-1.png" width="864" /></p>
 </div>
-<p>Understanding the Results</p>
+<h2 id="understanding-the-results">Understanding the Results</h2>
 <p>The initial comparison shows a clear success for the “Issue-focused” version. The signup rate increased by approximately 5 percentage points, meaning that for every 100 visitors, the new version generated 5 more signups than the original. The violin plot illustrates that while the density of signups is fairly consistent, the “Issue-focused” version (B) creates a more robust upward shift in the mean signup rate.</p>
-<p>Modeling Treatment Effects by Age</p>
+<h2 id="modeling-treatment-effects-by-age">Modeling Treatment Effects by Age</h2>
 <p>To understand who the message resonated with most, a Linear Probability Model was used to estimate the treatment effect at specific ages. This reveals how the impact of the homepage changes as the audience gets older.</p>
 <div class="layout-chunk" data-layout="l-body">
 <details>
@@ -1630,8 +1630,9 @@ Show code
 <p><img src="index_files/figure-html5/plot2-1.png" width="624" /></p>
 </div>
 <p>The modeling reveals that the “treatment” is not equally effective for everyone. Older visitors showed a significantly stronger response to the issue-focused content compared to younger visitors. By calculating the treatment effect at ages 25, 40, and 60, we can see that the probability of signing up climbs as the age of the visitor increases, providing a clear strategy for targeted messaging.</p>
-<p>Ethical Reflection</p>
-<p>While A/B testing is a powerful statistical tool, its application in politics raises unique ethical concerns. Unlike commercial testing, these experiments influence political beliefs and democratic choices, often without informed consent. The ability to precisely measure and exploit subgroup differences—such as age or political interest—crosses a line if it becomes manipulative rather than informative. For digital strategies to remain ethical, campaigns must balance their technical capabilities with a moral responsibility toward transparency and fairness.</p>
+<h2 id="ethical-reflection">Ethical Reflection</h2>
+<p>While A/B testing is a powerful statistical tool, its application in politics raises unique ethical concerns. Unlike commercial testing, these experiments influence political beliefs and democratic choices, often without informed consent. The ability to precisely measure and exploit subgroup differences such as age or political interest crosses a line if it becomes manipulative rather than informative. For digital strategies to remain ethical, campaigns must balance their technical capabilities with a moral responsibility toward transparency and fairness.</p>
+<p><a href="../../projects.html">← Back to Projects</a></p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

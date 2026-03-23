@@ -1,0 +1,135 @@
+---
+title: "Partisan Signals in Defeat: Predicting Party from U.S Presidential Concession Speeches"
+date: 2026-03-22
+description: |
+  Exploring whether Democrats and Republicans use detectably different language 
+  even in moments of defeat: a Naive Bayes text classification analysis.
+output:
+  distill::distill_article:
+    self_contained: false
+    code_folding: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+
+library(stringr)
+library(quanteda)
+library(readtext)
+library(quanteda.textmodels)
+library(caret)
+library(ggplot2)
+library(dplyr)
+
+speeches <- readtext("Concession Speeches/*.txt")
+speeches_corpus <- corpus(speeches)
+
+nms <- names(speeches_corpus)
+speeches_corpus$Year  <- as.numeric(gsub('[^[:digit:]]', '', nms))
+speeches_corpus$Party <- str_sub(nms, start = -5, -5)
+speeches_corpus$Name  <- str_sub(nms, end = -12)
+
+speeches_para <- corpus_reshape(speeches_corpus, to = "paragraphs", use_docvars = TRUE)
+
+toks <- tokens(speeches_para, remove_punct = TRUE, remove_symbols = TRUE,
+               remove_numbers = TRUE, split_hyphens = TRUE)
+toks <- tokens_wordstem(toks)
+toks <- tokens_remove(toks, pattern = c("applpaus", "applause"))
+toks <- tokens_select(toks, c("*st", "*th", "*rd"), selection = "remove")
+
+dfm_all  <- dfm(toks) |> dfm_remove(stopwords("english")) |> dfm_trim(min_termfreq = 3)
+dfm_bool <- dfm_weight(dfm_all, scheme = "boolean")
+
+set.seed(2025)
+train_idx <- sample(1:ndoc(dfm_bool), size = 0.8 * ndoc(dfm_bool))
+test_idx  <- setdiff(1:ndoc(dfm_bool), train_idx)
+
+dfm_train <- dfm_bool[train_idx, ]
+dfm_test  <- dfm_bool[test_idx, ]
+y_train   <- docvars(dfm_train, "Party")
+y_test    <- docvars(dfm_test, "Party")
+
+nb        <- textmodel_nb(dfm_train, y_train, distribution = "Bernoulli")
+predicted <- predict(nb, newdata = dfm_match(dfm_test, featnames(dfm_train)))
+tab       <- table(predicted, y_test)
+cfm       <- confusionMatrix(tab, mode = "everything", positive = "D")
+```
+
+## Overview
+
+Concession speeches are one of the few moments in American politics where partisanship is supposed to disappear. The race is over, the result is accepted, and the expectation is unity. I wanted to test whether that actually holds in the language itself, can a model trained only on word presence and absence correctly predict whether a paragraph came from a Democrat or a Republican?
+
+Using 19 concession speeches from 1896 to 2016, I reshaped the corpus into 337 paragraphs and trained a Bernoulli Naive Bayes classifier. The Bernoulli variant was chosen because it models word *absence* as well as presence, particularly useful for short texts where most vocabulary simply won't appear.
+
+## Do the Words Give It Away?
+
+```{r confusion-plot, fig.width=6, fig.height=4.5}
+as.data.frame(tab) |>
+  rename(Predicted = predicted, Actual = y_test) |>
+  ggplot(aes(x = Actual, y = Predicted, fill = Freq)) +
+  geom_tile(colour = "white", linewidth = 1.5) +
+  geom_text(aes(label = Freq), size = 9, fontface = "bold", colour = "white") +
+  scale_fill_gradient(low = "#9ecae1", high = "#2166ac") +
+  labs(
+    title    = "How Well Does the Model Classify Party?",
+    subtitle = "Bernoulli Naive Bayes predicted vs actual party label",
+    x = "Actual Party", y = "Predicted Party",
+    caption  = "D = Democrat, R = Republican. Paragraphs from 19 concession speeches (1896-2016)."
+  ) +
+  theme_minimal(base_size = 11) +
+  theme(plot.title = element_text(face = "bold"), panel.grid = element_blank())
+```
+
+**Classification Performance:**
+
+```{r metrics, echo=FALSE}
+cat("Accuracy:  ", round(cfm$overall["Accuracy"], 3), "\n")
+cat("Precision: ", round(cfm$byClass["Precision"], 3), "\n")
+cat("Recall:    ", round(cfm$byClass["Recall"], 3), "\n")
+cat("F1:        ", round(cfm$byClass["F1"], 3), "\n")
+```
+
+The model achieves around 80% accuracy - well above what you'd get by always predicting the majority class. Republican paragraphs are classified with particularly high confidence. The errors cluster where you'd expect: gratitude, patriotism, calls for unity, the shared language of defeat that both parties reach for regardless of affiliation.
+
+## What the Model Is Actually Listening To
+
+```{r words-plot, fig.width=9, fig.height=5}
+library(plotly)
+
+log_diff <- coef(nb)[, "D"] - coef(nb)[, "R"]
+
+p <- rbind(
+  data.frame(word = names(sort(log_diff, decreasing = TRUE)[1:12]),
+             score = as.numeric(sort(log_diff, decreasing = TRUE)[1:12]),
+             party = "Democrat"),
+  data.frame(word = names(sort(log_diff)[1:12]),
+             score = abs(as.numeric(sort(log_diff)[1:12])),
+             party = "Republican")
+) |>
+  ggplot(aes(x = reorder(word, score), y = score, fill = party)) +
+  geom_col(show.legend = FALSE, width = 0.7) +
+  facet_wrap(~ party, scales = "free_y") +
+  coord_flip() +
+  scale_fill_manual(values = c("Democrat" = "#2166ac", "Republican" = "#d6604d")) +
+  labs(
+    title    = "The Words That Reveal Party Identity",
+    subtitle = "Largest difference in Naive Bayes feature scores between parties",
+    x = NULL, y = "Score difference",
+    caption  = "Stemmed tokens. Bernoulli Naive Bayes trained on paragraph-level features."
+  ) +
+  theme_minimal(base_size = 13) +
+  theme(plot.title = element_text(face = "bold"), strip.text = element_text(face = "bold"),
+        panel.grid.major.x = element_blank())
+
+ggplotly(p)
+```
+
+The words most associated with Democratic paragraphs tend to cluster around forward-looking, values-oriented language. Republican paragraphs lean towards record and achievement framing. These are not campaign slogans, they are words that surface naturally in moments of loss, which makes the partisan gap more prominent.
+
+## What This Tells Us
+
+The fact that a 73.5% accurate classifier can be built from nothing but word presence in concession speeches suggests that partisan rhetorical habits run deeper than conscious messaging. Even stripped of policy debate and electoral competition, the language of defeat carries a party fingerprint.
+
+That said, this is a small dataset spanning over a century of American politics. Some of the signal may reflect historical era rather than party. A stronger analysis would control for time period, or restrict to post-war speeches. But as a starting point, the result is clear: even in defeat, the words give it away.
+
+[← Back to Projects](../../projects.html)

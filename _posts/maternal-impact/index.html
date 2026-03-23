@@ -1541,13 +1541,13 @@ work together to influence child development.</p></p>
 
 
 <div class="d-article">
-<p>Overview:
-In this project, I wanted to see how much a child’s home environment affects
+<h2 id="overview">Overview</h2>
+<p>In this project, I wanted to see how much a child’s home environment affects
 their success. I looked at how things like a mother’s education and her work
 status, which I grouped together as “family advantage” connect with her IQ to
 influence her child’s test scores.</p>
-<p>The Double Advantage
-The graph below breaks down these test scores. I grouped the families by their
+<h2 id="the-double-advantage">The Double Advantage</h2>
+<p>The graph below breaks down these test scores. I grouped the families by their
 advantage level and separated them by the mother’s IQ to see if having a more
 “advantaged” background makes a difference even when IQ is the same.</p>
 <div class="layout-chunk" data-layout="l-body">
@@ -1602,12 +1602,12 @@ Show code
 <span><span class='fu'><a href='https://rdrr.io/r/base/print.html'>print</a></span><span class='op'>(</span><span class='va'>plot_iq</span><span class='op'>)</span></span></code></pre>
 </div>
 </details>
-<p><img src="index_files/figure-html5/plot-1.png" width="624" /></p>
+<p><img src="index_files/figure-html5/plot-1.png" width="100%" /></p>
 </div>
-<p>Understanding the Results:
-The plot suggests that a child’s test performance is not determined by maternal IQ alone, but is heavily influenced by the family’s socio-economic environment. In the lower and middle IQ groups, there is a clear upward trend: as family advantage increases, child test scores rise accordingly. This indicates that factors like a mother’s education and employment status provide a vital support system that can significantly improve developmental outcomes.</p>
+<h2 id="understanding-the-results">Understanding the Results</h2>
+<p>The plot suggests that a child’s test performance is not determined by maternal IQ alone, but is heavily influenced by the family’s socio-economic environment. In the lower and middle IQ groups, there is a clear upward trend: as family advantage increases, child test scores rise accordingly. This indicates that factors like a mother’s education and employment status provide a vital support system that can significantly improve developmental outcomes.</p>
 <p>A key finding in this visualisation is the “equalsing” effect of a high-advantage home. Children born to mothers in the lower IQ group who have high family advantage often achieve scores comparable to children in the middle IQ group. This suggests that a stable, advantaged environment can effectively bridge the gap in test scores. While the impact of family advantage appears to level off for mothers who already have high IQs, the overall pattern confirms that a supportive home environment is essential for helping children reach their full potential, particularly when they are not starting from a high-IQ baseline.</p>
-<p>The Myth of Meritocracy?</p>
+<h2 id="the-myth-of-meritocracy">The Myth of Meritocracy?</h2>
 <p>While the violin plots show general group trends, this section explores whether “merit” (maternal IQ) alone determines outcomes, or if structural factors like education create the true path to success.</p>
 <div class="layout-chunk" data-layout="l-body">
 <details>
@@ -1662,7 +1662,7 @@ Show code
 <span>    y <span class='op'>=</span> <span class='st'>"Child’s test score"</span>,</span>
 <span>    caption <span class='op'>=</span> <span class='st'>"Data: NLSY (Gelman &amp; Hill, 2007)"</span></span>
 <span>  <span class='op'>)</span> <span class='op'>+</span></span>
-<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggtheme.html'>theme_minimal</a></span><span class='op'>(</span>base_size <span class='op'>=</span> <span class='fl'>12</span><span class='op'>)</span> <span class='op'>+</span></span>
+<span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/ggtheme.html'>theme_minimal</a></span><span class='op'>(</span>base_size <span class='op'>=</span> <span class='fl'>10</span><span class='op'>)</span> <span class='op'>+</span></span>
 <span>  <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/theme.html'>theme</a></span><span class='op'>(</span></span>
 <span>    legend.position <span class='op'>=</span> <span class='st'>"bottom"</span>,</span>
 <span>    legend.title <span class='op'>=</span> <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/element.html'>element_text</a></span><span class='op'>(</span>face <span class='op'>=</span> <span class='st'>"bold"</span><span class='op'>)</span>,</span>
@@ -1677,7 +1677,8 @@ Show code
 <p><img src="index_files/figure-html5/plot2-1.png" width="624" /></p>
 </div>
 <p>While the initial analysis suggests that background advantage generally raises scores, a closer examination of individual cases shows that this relationship varies by maternal education. Within the high school diploma group, the steeper trend indicates that maternal IQ is more strongly associated with child outcomes when educational stability is present. In this context, high school completion appears to amplify the impact of maternal ability on child development.</p>
-<p>The most revealing feature of this visualization is the presence of unexpected cases. Several children achieve high scores despite lower maternal ability, and these outcomes occur more frequently when mothers hold a high school diploma. Conversely, higher maternal ability does not consistently produce strong outcomes in the absence of this educational foundation. Together, these patterns suggest that individual ability matters, but the structural baseline provided by maternal education plays a critical role in shaping children’s trajectories.</p>
+<p>The most revealing feature of this visualisation is the presence of unexpected cases. Several children achieve high scores despite lower maternal ability, and these outcomes occur more frequently when mothers hold a high school diploma. Conversely, higher maternal ability does not consistently produce strong outcomes in the absence of this educational foundation. Together, these patterns suggest that individual ability matters, but the structural baseline provided by maternal education plays a critical role in shaping children’s trajectories.</p>
+<p><a href="../../projects.html">← Back to Projects</a></p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

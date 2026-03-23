@@ -15,15 +15,15 @@ knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 library(tidyverse)
 ```
 
-Overview
+## Overview
 
-This project evaluates a digital A/B test for a political party to determine which homepage version—the standard control or an "issue-focused" alternative—best drives supporter signups. Beyond simply finding the "winner," this analysis investigates how different demographics, such as age and political interest, respond to the messaging. This allows for a data-driven approach to understanding the Average Treatment Effect (ATE) and optimising digital political communication.
+This project evaluates a digital A/B test for a political party to determine which homepage version the standard control or an "issue-focused" alternative best drives supporter signups. Beyond simply finding the "winner," this analysis investigates how different demographics, such as age and political interest, respond to the messaging. This allows for a data-driven approach to understanding the Average Treatment Effect (ATE) and optimising digital political communication.
 
-Visualising the Signup Distribution
+## Visualising the Signup Distribution
 
-The first step in the analysis is to compare the signup rates between the two versions of the homepage to visualize the overall density and distribution of the results.
+The first step in the analysis is to compare the signup rates between the two versions of the homepage to visualise the overall density and distribution of the results.
 
-```{r plot1}
+```{r plot1, fig.width=9, fig.height=5}
 party_ab <- read.csv("party_ab.csv")
 
 party_ab$treatment_label <- factor(party_ab$treatment,
@@ -49,11 +49,11 @@ ggplot(party_ab, aes(x = treatment_label, y = support_signup, fill = treatment_l
     plot.title = element_text(face = "bold")
   )
 ```
-Understanding the Results
+## Understanding the Results
 
 The initial comparison shows a clear success for the "Issue-focused" version. The signup rate increased by approximately 5 percentage points, meaning that for every 100 visitors, the new version generated 5 more signups than the original. The violin plot illustrates that while the density of signups is fairly consistent, the "Issue-focused" version (B) creates a more robust upward shift in the mean signup rate.
 
-Modeling Treatment Effects by Age
+## Modeling Treatment Effects by Age
 
 To understand who the message resonated with most, a Linear Probability Model was used to estimate the treatment effect at specific ages. This reveals how the impact of the homepage changes as the audience gets older.
 
@@ -99,6 +99,8 @@ ggplot(df_te, aes(x = factor(age), y = te)) +
 
 The modeling reveals that the "treatment" is not equally effective for everyone. Older visitors showed a significantly stronger response to the issue-focused content compared to younger visitors. By calculating the treatment effect at ages 25, 40, and 60, we can see that the probability of signing up climbs as the age of the visitor increases, providing a clear strategy for targeted messaging.
 
-Ethical Reflection
+## Ethical Reflection
 
-While A/B testing is a powerful statistical tool, its application in politics raises unique ethical concerns. Unlike commercial testing, these experiments influence political beliefs and democratic choices, often without informed consent. The ability to precisely measure and exploit subgroup differences—such as age or political interest—crosses a line if it becomes manipulative rather than informative. For digital strategies to remain ethical, campaigns must balance their technical capabilities with a moral responsibility toward transparency and fairness.
+While A/B testing is a powerful statistical tool, its application in politics raises unique ethical concerns. Unlike commercial testing, these experiments influence political beliefs and democratic choices, often without informed consent. The ability to precisely measure and exploit subgroup differences such as age or political interest crosses a line if it becomes manipulative rather than informative. For digital strategies to remain ethical, campaigns must balance their technical capabilities with a moral responsibility toward transparency and fairness.
+
+[← Back to Projects](../../projects.html)
