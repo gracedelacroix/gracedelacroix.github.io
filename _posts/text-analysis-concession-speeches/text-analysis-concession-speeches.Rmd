@@ -89,7 +89,7 @@ cat("Recall:    ", round(cfm$byClass["Recall"], 3), "\n")
 cat("F1:        ", round(cfm$byClass["F1"], 3), "\n")
 ```
 
-The model achieves around 80% accuracy - well above what you'd get by always predicting the majority class. Republican paragraphs are classified with particularly high confidence. The errors cluster where you'd expect: gratitude, patriotism, calls for unity, the shared language of defeat that both parties reach for regardless of affiliation.
+The model achieves around 74% accuracy - well above what you'd get by always predicting the majority class. Republican paragraphs are classified with particularly high confidence. The errors cluster where you'd expect: gratitude, patriotism, calls for unity, the shared language of defeat that both parties reach for regardless of affiliation.
 
 ## What the Model Is Actually Listening To
 
