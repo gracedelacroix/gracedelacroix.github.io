@@ -11,7 +11,7 @@ output: distill::distill_article
 
 Hi! My name is Grace and I am currently a final year student at the University of Essex, studying 
 Politics and International Relations.
-My academic interests focus on political quantitative analysis, policy research,
+My academic interests focus on quantitative political analysis, policy research,
 and political economy. Here you can find some projects I have worked on!
 
 [View all projects](projects.html)
