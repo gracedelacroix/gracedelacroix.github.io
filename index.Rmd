@@ -1,18 +1,36 @@
 ---
 title: "Grace Delacroix"
-links:
-  - label: GitHub
-    url: "https://github.com/gracedelacroix"
-  - label: LinkedIn
-    url: "https://www.linkedin.com/in/grace-delacroix?originalSubdomain=uk"
 output: distill::distill_article
 ---
+
 <img src="photo.jpg" style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover; float: left; margin-right: 20px; margin-bottom: 10px;">
 
-Hi! My name is Grace and I am currently a final year student at the University of Essex, studying 
-Politics and International Relations.
-My academic interests focus on quantitative political analysis, policy research,
-and political economy. Here you can find some projects I have worked on!
+Hi! My name is Grace, and I studied Bsc Politics and International Relations at the University of Essex. My academic interests focus on quantitative political analysis, policy research, and political economy. Here you can find some projects I have worked on!
+
+<div style="margin-top: 20px; margin-bottom: 20px; display: flex; gap: 10px; flex-wrap: wrap;">
+
+<a href="https://github.com/gracedelacroix" target="_blank"
+style="display:inline-block; padding:10px 18px;
+background:#24292e; color:#fff; border-radius:8px;
+font-weight:500; text-decoration:none;">
+GitHub
+</a>
+
+<a href="https://www.linkedin.com/in/grace-delacroix?originalSubdomain=uk" target="_blank"
+style="display:inline-block; padding:10px 18px;
+background:#0A66C2; color:#fff; border-radius:8px;
+font-weight:500; text-decoration:none;">
+LinkedIn
+</a>
+
+<a href="mailto:gdelacroix10@gmail.com"
+style="display:inline-block; padding:10px 18px;
+background:#555; color:#fff; border-radius:8px;
+font-weight:500; text-decoration:none;">
+Email
+</a>
+
+</div>
 
 [View all projects](projects.html)
 
