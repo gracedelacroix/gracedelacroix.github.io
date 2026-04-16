@@ -17,9 +17,7 @@ kidiq <- read.csv("kidiq.csv")
 ## Overview
 
 In this project, I wanted to see how much a child’s home environment affects 
-their success. I looked at how things like a mother's education and her work
-status, which I grouped together as "family advantage" connect with her IQ to 
-influence her child's test scores.
+their success. I examined how maternal education and employment status, grouped as ‘family advantage’ interact with maternal IQ to shape child test scores as an outcome of intergenerational inequality.
 
 ## The Double Advantage
 The graph below breaks down these test scores. I grouped the families by their
@@ -76,9 +74,9 @@ print(plot_iq)
 
 ## Understanding the Results 
 
-The plot suggests that a child’s test performance is not determined by maternal IQ alone, but is heavily influenced by the family's socio-economic environment. In the lower and middle IQ groups, there is a clear upward trend: as family advantage increases, child test scores rise accordingly. This indicates that factors like a mother’s education and employment status provide a vital support system that can significantly improve developmental outcomes.
+The plot suggests that child test performance is not explained by maternal IQ alone, but is strongly conditioned by the family’s socioeconomic position. In the lower and middle IQ groups, there is a clear upward trend: as family advantage increases, child test scores rise accordingly. This indicates that institutional and socioeconomic resources associated with maternal education and employment status function as key mediating factors that can significantly improve developmental outcomes.
 
-A key finding in this visualisation is the "equalsing" effect of a high-advantage home. Children born to mothers in the lower IQ group who have high family advantage often achieve scores comparable to children in the middle IQ group. This suggests that a stable, advantaged environment can effectively bridge the gap in test scores. While the impact of family advantage appears to level off for mothers who already have high IQs, the overall pattern confirms that a supportive home environment is essential for helping children reach their full potential, particularly when they are not starting from a high-IQ baseline.
+A key finding in this visualisation is the equalising effect of a high-advantage home. Children born to mothers in the lower IQ group who have high family advantage often achieve scores comparable to children in the middle IQ group. This suggests that differences in child outcomes are shaped not only by maternal cognitive ability, but also by the distribution of socioeconomic advantage across households, reflecting broader patterns of inequality reproduction within the education system. Whilst the impact of family advantage appears to level off for mothers who already have high IQs, the overall pattern indicates that stratification in outcomes is partially conditioned by structural socioeconomic positioning, particularly for those not starting from a high-IQ baseline.
 
 ## The Myth of Meritocracy?
 
@@ -143,9 +141,9 @@ ggplot(plot_merit, aes(mom_iq, kid_score)) +
     plot.margin = margin(10, 20, 10, 20)
   )
 ```
-While the initial analysis suggests that background advantage generally raises scores, a closer examination of individual cases shows that this relationship varies by maternal education. Within the high school diploma group, the steeper trend indicates that maternal IQ is more strongly associated with child outcomes when educational stability is present. In this context, high school completion appears to amplify the impact of maternal ability on child development.
+Whilst the initial analysis suggests that background advantage is associated with higher scores, a closer examination reveals that this relationship is institutionally mediated. Within the high-school completion group, the steeper trend indicates that maternal ability translates into child outcomes more strongly under conditions of completed educational attainment.
 
-The most revealing feature of this visualisation is the presence of unexpected cases. Several children achieve high scores despite lower maternal ability, and these outcomes occur more frequently when mothers hold a high school diploma. Conversely, higher maternal ability does not consistently produce strong outcomes in the absence of this educational foundation. Together, these patterns suggest that individual ability matters, but the structural baseline provided by maternal education plays a critical role in shaping children’s trajectories.
+The most revealing feature of the visualisation is the presence of outlier cases. Several children achieve high scores despite lower maternal ability, and these cases occur more frequently when mothers hold a high school diploma, a credential produced through public education systems. By contrast, higher maternal ability does not consistently yield strong outcomes in the absence of this educational threshold. These patterns suggest that individual ability operates within structurally conditioned pathways, with educational attainment shaping the distribution of early-life outcomes through formalised systems of stratification.
 
 [← Back to Projects](../../projects.html)
 
